@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Module3_Task1.Helpers
 {
@@ -19,17 +20,28 @@ namespace Module3_Task1.Helpers
             _size++;
         }
 
+        public void AddRange(ICollection<T> range)
+        {
+            while (_size + range.Count > _list.Length)
+            {
+                ExpandArr();
+            }
+
+            foreach (var item in range)
+            {
+                _list[_size] = item;
+                _size++;
+            }
+        }
+
         public bool Remove(T item)
         {
             for (var i = 0; i < _size; i++)
             {
-                Console.WriteLine(_list[i]);
-                Console.WriteLine(item);
-
-                /*if (_list[i] == item)
+                if (_list[i].Equals(item))
                 {
                     _list[i] = default(T);
-                }*/
+                }
             }
 
             return true;
@@ -41,15 +53,15 @@ namespace Module3_Task1.Helpers
             _list[index] = default(T);
         }
 
-        public void Sort()
+        public void Sort(IComparer<T> comparer)
         {
             CheckLength();
-            Array.Sort(_list);
+            Array.Sort(_list, comparer);
         }
 
         public IEnumerator GetEnumerator()
         {
-            for (int i = 0; i < _size; i++)
+            for (int i = 0; i < _list.Length; i++)
             {
                 yield return _list[i];
             }
@@ -59,7 +71,7 @@ namespace Module3_Task1.Helpers
         {
             var newArr = new T[_list.Length * 2];
 
-            for (int i = 0; i < newArr.Length; i++)
+            for (int i = 0; i < _list.Length; i++)
             {
                 newArr[i] = _list[i];
             }

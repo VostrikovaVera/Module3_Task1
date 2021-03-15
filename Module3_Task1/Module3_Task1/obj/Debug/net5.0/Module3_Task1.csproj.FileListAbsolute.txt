@@ -9,7 +9,6 @@ C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\bin\Deb
 C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\bin\Debug\net5.0\Module3_Task1.dll
 C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\bin\Debug\net5.0\ref\Module3_Task1.dll
 C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\bin\Debug\net5.0\Module3_Task1.pdb
-C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\obj\Debug\net5.0\Module3_Task1.csprojAssemblyReference.cache
 C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\obj\Debug\net5.0\Module3_Task1.dll
 C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\obj\Debug\net5.0\ref\Module3_Task1.dll
 C:\Users\Vira\learning\C# .NET\Module3_Task1\Module3_Task1\Module3_Task1\obj\Debug\net5.0\Module3_Task1.pdb

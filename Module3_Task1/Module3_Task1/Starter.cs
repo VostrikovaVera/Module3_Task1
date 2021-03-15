@@ -10,13 +10,23 @@ namespace Module3_Task1
         {
             try
             {
-                var list = new CustomList<int>();
+                var list = new CustomList<string>();
+                List<string> range = new List<string> { "rrrrr", "wwwwwwwwwwwwwwww", "qqqqqqqqqqqqqqqqqqqq", "222", "bbbbbb", "jjjjj", "kkkkk" };
 
-                list.Add(8);
-                list.Add(3);
-                list.Add(4);
-                list.Add(5);
-                list.RemoveAt(5);
+                list.Add("aaaaaa");
+                list.Add("fff");
+                list.Add("yyyyyyyyy");
+                list.Add("ooooo");
+                list.Add("xxxxxx");
+                list.Add("ttt");
+                list.Remove("ttt");
+                list.AddRange(range);
+                list.Sort(new StringLengthComparer());
+
+                foreach (var item in list)
+                {
+                    Console.WriteLine(item);
+                }
             }
             catch (Exception exception)
             {
